@@ -1,3 +1,9 @@
-<h2 id="title">Welcome to Ember</h2>
-
-{{outlet}}
+{{#affinity-engine engineId="font-awesome" config=(hash global=(hash attrs=(hash fontFamily="font-awesome"))) as |engine|}}
+  <div data-test={{hook "single"}}>{{affinity-engine-plugin-icon-font-awesome engineId=engine.engineId icons=single}}</div>
+  <div data-test={{hook "stacked"}}>{{affinity-engine-plugin-icon-font-awesome engineId=engine.engineId icons=stacked}}</div>
+  <div data-test={{hook "sized"}}>{{affinity-engine-plugin-icon-font-awesome engineId=engine.engineId icons=sized}}</div>
+  <div data-test={{hook "spinner"}}>{{affinity-engine-plugin-icon-font-awesome engineId=engine.engineId icons=spinner}}</div>
+  <div data-test={{hook "pulser"}}>{{affinity-engine-plugin-icon-font-awesome engineId=engine.engineId icons=pulser}}</div>
+  <div data-test={{hook "rotated"}}>{{affinity-engine-plugin-icon-font-awesome engineId=engine.engineId icons=rotated}}</div>
+  <div data-test={{hook "flipped"}}>{{affinity-engine-plugin-icon-font-awesome engineId=engine.engineId icons=flipped}}</div>
+{{/affinity-engine}}

@@ -1,0 +1,9 @@
+{{#if stacked}}
+  <span class="fa-stack {{stackSize}}">
+    {{#each configuration as |icon|}}
+      {{affinity-engine-plugin-icon-font-awesome-icon icon=icon}}
+    {{/each}}
+  </span>
+{{else}}
+  {{affinity-engine-plugin-icon-font-awesome-icon icon=configuration}}
+{{/if}}

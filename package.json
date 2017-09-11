@@ -1,9 +1,12 @@
 {
   "name": "affinity-engine-plugin-icon-font-awesome",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "0.2.0",
+  "description": "Use Font Awesome with the Affinity Engine",
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "affinity-engine",
+    "affinity-engine plugin",
+    "affinity-engine icon"
   ],
   "license": "MIT",
   "author": "",
@@ -11,25 +14,27 @@
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
+  "repository": "https://github.com/affinity-engine/affinity-engine-plugin-icon-font-awesome",
   "scripts": {
     "build": "ember build",
     "start": "ember server",
     "test": "ember try:each"
   },
   "dependencies": {
-    "ember-cli-babel": "^6.3.0"
+    "ember-cli-babel": "^6.3.0",
+    "ember-cli-htmlbars": "^2.0.1"
   },
   "devDependencies": {
+    "affinity-engine": "^0.2.0",
     "broccoli-asset-rev": "^2.4.5",
     "ember-ajax": "^3.0.0",
     "ember-cli": "~2.15.0",
     "ember-cli-dependency-checker": "^2.0.0",
     "ember-cli-eslint": "^4.0.0",
-    "ember-cli-htmlbars": "^2.0.1",
     "ember-cli-htmlbars-inline-precompile": "^1.0.0",
     "ember-cli-inject-live-reload": "^1.4.1",
     "ember-cli-qunit": "^4.0.0",
+    "ember-cli-sass": "^7.0.0",
     "ember-cli-shims": "^1.1.0",
     "ember-cli-sri": "^2.1.0",
     "ember-cli-uglify": "^1.2.0",
@@ -44,6 +49,10 @@
     "node": "^4.5 || 6.* || >= 7.*"
   },
   "ember-addon": {
-    "configPath": "tests/dummy/config"
+    "configPath": "tests/dummy/config",
+    "demoURL": "http://www.affinityengine.org/#/api/plugins/icon-font-awesome",
+    "after": [
+      "affinity-engine"
+    ]
   }
 }

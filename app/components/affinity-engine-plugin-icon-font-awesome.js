@@ -1,0 +1,1 @@
+export { default } from 'affinity-engine-plugin-icon-font-awesome/components/affinity-engine-plugin-icon-font-awesome';

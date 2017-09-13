@@ -1,6 +1,6 @@
 {
   "name": "affinity-engine-plugin-icon-font-awesome",
-  "version": "0.2.0",
+  "version": "0.2.3",
   "description": "Use Font Awesome with the Affinity Engine",
   "keywords": [
     "ember-addon",
